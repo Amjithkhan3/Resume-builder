@@ -10,9 +10,9 @@ function Preview({ resumeDetails = {} }) {
     location,
     email,
     phoneNumber,
-    github,
-    linkedn,
-    portfolio,
+    githubProfile,
+    linkedInProfile,
+    portfolioLink,
     summary,
     courseName,
     collegeName,
@@ -37,9 +37,9 @@ function Preview({ resumeDetails = {} }) {
       </p>
 
       <p className='my-2'>
-        {github && <a href={github} target='_blank' className='mx-1'>GITHUB</a>} |
-        {linkedn && <a href={linkedn} target='_blank' className='mx-1'>LINKEDIN</a>} |
-        {portfolio && <a href={portfolio} target='_blank' className='mx-1'>PORTFOLIO</a>}
+        {githubProfile && <a href={githubProfile} target='_blank' className='mx-1'>GITHUB</a>} |
+        {linkedInProfile && <a href={linkedInProfile} target='_blank' className='mx-1'>LINKEDIN</a>} |
+        {portfolioLink && <a href={portfolioLink} target='_blank' className='mx-1'>PORTFOLIO</a>}
       </p>
 
       <Divider sx={{ fontSize: '25px' }}>Summary</Divider>
